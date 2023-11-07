@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hi asdasdsada</p>
+    <div id = "status-container">
+        <b id = "status-text">
+
+        </b>
+    </div>
+
+    <script>
+        if (window.location.href.split("code=")[1] === undefined) {
+            document.getElementById("status-text").innerHTML = "Your Minecraft (Microsoft) authorization process failed! Please re-try the command with the bot!"
+        } else {
+            document.getElementById("status-text").innerHTML = "Your Minecraft (Microsoft) authorization process was successful! Your account has should have been added to the database!"
+        }
+    </script>
 </body>
 </html>
